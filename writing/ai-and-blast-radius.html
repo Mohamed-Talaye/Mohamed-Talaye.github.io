@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI and blast radius: change the control system, not the scope · Mohamed Talaye</title>
+<meta name="description" content="A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops.">
+<meta name="author" content="Mohamed Talaye">
+<link rel="canonical" href="https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html">
+<meta property="og:type" content="article"><meta property="og:title" content="AI and blast radius: change the control system, not the scope · Mohamed Talaye">
+<meta property="og:description" content="A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops."><meta property="og:url" content="https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html">
+<meta property="og:image" content="https://mohamed-talaye.github.io/assets/mohamed-talaye.jpg"><meta name="twitter:card" content="summary">
+<link rel="me" href="https://www.linkedin.com/in/mohamed-talaye"><link rel="me" href="https://github.com/Mohamed-Talaye">
+<link rel="stylesheet" href="/style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI and blast radius: change the control system, not the scope", "datePublished": "2026-01-15", "author": {"@type": "Person", "name": "Mohamed Talaye", "url": "https://mohamed-talaye.github.io/"}, "mainEntityOfPage": "https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html", "description": "A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops."}</script>
+</head><body>
+<header class="site"><div class="wrap"><a class="name" href="/">Mohamed Talaye</a>
+<nav><a href="/#profile">Profile</a><a href="/#speaking">Speaking and media</a><a href="/#writing">Writing</a><a href="/#career">Career</a></nav></div></header>
+<main class="wrap"><article><h1>AI and blast radius: change the control system, not the scope</h1><span class="meta">Mohamed Talaye · 15 January 2026</span><p class="note">First published as a LinkedIn post in reply to an article by Philippe Ensarguet.</p>
+<p>One part of Philippe Ensarguet&#x27;s article particularly resonated with me: the idea that AI impact must be evaluated through blast radius, especially for mission-critical infrastructure, safety-sensitive systems, and codebases carrying decades of institutional wisdom.</p>
+<p>I strongly agree with the caution, but I would like to add a complementary perspective.</p>
+<p>I don’t think the answer is to exclude AI from these high-blast-radius domains. I think the answer is to change the control system around AI-written code.</p>
+<p>AI should absolutely support coding in distributed systems, databases, and security frameworks, provided that we embed stronger safeguards by design:</p>
+<ul>
+<li>AI-assisted observability and monitoring as a first-class concern</li>
+<li>Early anomaly detection to surface bugs, backdoors, and unintended behaviours</li>
+<li>Security testing integrated directly into CI/CD pipelines</li>
+<li>Continuous validation at runtime, not just at build time</li>
+<li>Sandbox and progressive (A/B) deployments, where AI-generated code is first exposed to limited user segments, then gradually expanded as confidence grows</li>
+</ul>
+<p>In other words: the risk isn’t AI generating code, the risk is AI generating code without fast, intelligent feedback loops.</p>
+<h3>Open source</h3>
+<p>On open source, I largely share Philippe’s optimism. OSS is not threatened by AI. It is, in many ways, its nourishment. Open source projects provide the patterns, debates, edge cases, and operational lessons that AI systems learn from. And AI, in turn, should and will generate new open source that benefits the entire ecosystem.</p>
+<h3>Where wisdom lives</h3>
+<p>Where I think the next shift happens is how wisdom is preserved.</p>
+<p>Yes, mature codebases encode years of production experience, but that wisdom shouldn’t live only as legacy code.</p>
+<p>It needs to be progressively captured as intent, constraints, architectural decisions, and behavioural expectations, so it can guide AI-assisted development without dragging along unnecessary technical debt.</p>
+<p>If we succeed at that, we don’t lose institutional memory. We make it executable, observable, and evolvable.</p>
+<p>AI isn’t replacing open source or engineering judgment. It’s reshaping where wisdom lives, how risk is controlled, and how quickly issues can be detected, and it’s also pushing us to evolve our operating models. Capabilities like observability, monitoring, and security, which traditionally grew alongside systems over time, increasingly need to be present from the start to safely support AI-assisted development.</p>
+<p>That’s not a threat. It’s an architectural challenge worth embracing.</p>
+<p class="note">Also published on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7417683282173042688/">LinkedIn</a>, where the discussion is.</p></article>
+<p><a href="/#writing">More writing</a></p></main>
+<footer class="wrap"><a href="https://www.linkedin.com/in/mohamed-talaye" rel="me">LinkedIn</a><a href="https://github.com/Mohamed-Talaye" rel="me">GitHub</a><a href="/">Home</a><br>
+&copy; 2026 Mohamed Talaye. Views here are my own and not those of any employer.</footer>
+</body></html>
