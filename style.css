@@ -46,11 +46,13 @@ h3{font:600 1.08rem/1.35 var(--sans);margin:0 0 8px}
 .card .foot{margin-top:auto;font-size:.86rem;color:var(--mute)}.dark .card .foot{color:#8e9bb0}
 .more{display:inline-block;margin-top:30px;font-weight:600;text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:3px}
 .tint{background:#f2eee6}
-.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:2px solid var(--gold)}
-.timeline li{padding:22px 20px 0 0;position:relative}.timeline li:before{content:'';position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--gold)}
-.timeline .yr{font:600 .78rem/1 var(--sans);letter-spacing:.12em;color:var(--goldink);text-transform:uppercase}
-.timeline h3{font:400 1.3rem/1.2 var(--serif);margin:10px 0 8px}.timeline p{margin:0;color:var(--mute);font-size:.93rem;line-height:1.55}
-@media (max-width:860px){.timeline{grid-template-columns:1fr;border-top:0;border-left:2px solid var(--gold)}.timeline li{padding:0 0 26px 22px}.timeline li:before{top:4px;left:-7px}}
+.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:44px 0}
+.timeline li{padding:24px 32px 0 0;position:relative;border-top:2px solid var(--gold);display:grid;grid-template-rows:auto minmax(3.3rem,auto) 1fr;align-content:start}
+.timeline li:before{content:'';position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--gold)}
+.timeline .yr{font:600 .78rem/1 var(--sans);letter-spacing:.12em;color:var(--goldink);text-transform:uppercase;margin-bottom:12px}
+.timeline h3{font:400 1.4rem/1.18 var(--serif);margin:0;color:var(--fg);align-self:start}
+.timeline p{margin:8px 0 0;color:var(--mute);font-size:.95rem;line-height:1.55;max-width:30em}
+@media (max-width:860px){.timeline{grid-template-columns:1fr;gap:0;border-left:2px solid var(--gold)}.timeline li{border-top:0;padding:0 0 28px 22px;grid-template-rows:auto auto auto}.timeline li:before{top:2px;left:-7px}}
 /* lists */
 .rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .rows li{display:grid;grid-template-columns:150px 1fr;gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line)}
