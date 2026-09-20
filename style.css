@@ -16,7 +16,9 @@ a{color:var(--accent)}p{margin:.7em 0}
 .hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;flex:none;background:var(--line)}
 .hero h1{margin:0 0 .3em}.lede{font-size:1.2rem;color:var(--mute);margin:0}
 @media (max-width:560px){.hero{flex-direction:column;align-items:flex-start}}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:1.2em 0 0;padding:0;list-style:none}
+.portrait{float:right;width:240px;height:auto;margin:4px 0 14px 28px;border-radius:6px}
+@media (max-width:560px){.portrait{float:none;display:block;width:100%;max-width:340px;margin:0 0 16px}}
+.chips{clear:both;display:flex;flex-wrap:wrap;gap:8px;margin:1.2em 0 0;padding:0;list-style:none}
 .chips li{font:14px/1 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--mute)}
 .list{list-style:none;margin:0;padding:0}.list li{padding:14px 0;border-bottom:1px solid var(--line)}.list li:last-child{border-bottom:0}
 .meta{font:14px/1.4 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--mute);display:block;margin-bottom:2px}
