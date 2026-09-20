@@ -1,49 +1,207 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI and blast radius: change the control system, not the scope | Mohamed Talaye</title>
-<meta name="description" content="A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops.">
-<meta name="author" content="Mohamed Talaye">
-<link rel="canonical" href="https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html">
-<meta property="og:type" content="article"><meta property="og:title" content="AI and blast radius: change the control system, not the scope | Mohamed Talaye">
-<meta property="og:description" content="A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops."><meta property="og:url" content="https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html">
-<meta property="og:image" content="https://mohamed-talaye.github.io/assets/mohamed-talaye.jpg"><meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0e1a2b">
-<link rel="me" href="https://www.linkedin.com/in/mohamed-talaye"><link rel="me" href="https://github.com/Mohamed-Talaye">
-<link rel="icon" href="/assets/mohamed-talaye.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI and blast radius: change the control system, not the scope", "datePublished": "2026-01-15", "author": {"@type": "Person", "@id": "https://mohamed-talaye.github.io/#person", "name": "Mohamed Talaye", "url": "https://mohamed-talaye.github.io/"}, "publisher": {"@type": "Person", "@id": "https://mohamed-talaye.github.io/#person", "name": "Mohamed Talaye"}, "image": "https://mohamed-talaye.github.io/assets/mohamed-talaye.jpg", "inLanguage": "en", "mainEntityOfPage": "https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html", "description": "A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops."}</script>
-</head><body>
-<header class="top"><div class="wrap"><a class="brand" href="/"><i></i>Mohamed Talaye</a>
-<nav><a href="/#profile">Profile</a><a href="/speaking.html">Speaking</a><a href="/writing/" class=on>Writing</a><a href="/bio.html">Media kit</a></nav></div></header>
-<div class="page-head dark"><div class="wrap narrow"><p class="eyebrow">15 January 2026 · 2 min read</p><h1>AI and blast radius: change the control system, not the scope</h1></div></div>
-<section><div class="wrap narrow"><article><p class="note">First published as a LinkedIn post in reply to an article by Philippe Ensarguet.</p>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI and blast radius: change the control system, not the scope | Mohamed Talaye</title>
+  <meta name="description" content="A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops.">
+  <meta name="author" content="Mohamed Talaye">
+  <link rel="canonical" href="https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html">
+
+  <meta property="og:site_name" content="Mohamed Talaye">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI and blast radius: change the control system, not the scope | Mohamed Talaye">
+  <meta property="og:description" content="A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops.">
+  <meta property="og:url" content="https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html">
+  <meta property="og:image" content="https://mohamed-talaye.github.io/assets/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="article:published_time" content="2026-01-15">
+  <meta property="article:author" content="https://mohamed-talaye.github.io/">
+  <link rel="me" href="https://www.linkedin.com/in/mohamed-talaye">
+  <link rel="me" href="https://github.com/Mohamed-Talaye">
+  <link rel="alternate" type="application/rss+xml" title="Writing by Mohamed Talaye" href="/feed.xml">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0e1a2b">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Inter:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mohamed-talaye.github.io/#site",
+      "name": "Mohamed Talaye",
+      "url": "https://mohamed-talaye.github.io/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://mohamed-talaye.github.io/#person"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mohamed-talaye.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": "https://mohamed-talaye.github.io/writing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI and blast radius: change the control system, not the scope",
+          "item": "https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html#article",
+      "headline": "AI and blast radius: change the control system, not the scope",
+      "description": "A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops.",
+      "datePublished": "2026-01-15",
+      "dateModified": "2026-01-15",
+      "inLanguage": "en",
+      "image": "https://mohamed-talaye.github.io/assets/social-card.jpg",
+      "mainEntityOfPage": "https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html",
+      "wordCount": 378,
+      "author": {
+        "@id": "https://mohamed-talaye.github.io/#person"
+      },
+      "publisher": {
+        "@id": "https://mohamed-talaye.github.io/#person"
+      },
+      "sameAs": "https://www.linkedin.com/feed/update/urn:li:activity:7417683282173042688/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mohamed-talaye.github.io/#person",
+      "name": "Mohamed Talaye",
+      "url": "https://mohamed-talaye.github.io/",
+      "image": "https://mohamed-talaye.github.io/assets/mohamed-talaye.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohamed-talaye",
+        "https://github.com/Mohamed-Talaye",
+        "https://futurenetworld.net/profile/mohamed-talaye/",
+        "https://vivatech.com/speakers/b65fabf4-7340-f011-a5f1-6045bda07d25"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><i></i>Mohamed Talaye</a>
+    <nav aria-label="Main">
+      <a href="/#profile">Profile</a>
+      <a href="/speaking.html">Speaking</a>
+      <a href="/writing/" aria-current="page">Writing</a>
+      <a href="/bio.html">Media kit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="page-head dark">
+  <div class="wrap narrow">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/writing/">Writing</a></p>
+    <p class="eyebrow">15 January 2026 · 2 min read</p>
+    <h1>AI and blast radius: change the control system, not the scope</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap narrow">
+    <article>
+      <p class="note">First published as a LinkedIn post in reply to an article by Philippe Ensarguet.</p>
 <p>One part of Philippe Ensarguet&#x27;s article particularly resonated with me: the idea that AI impact must be evaluated through blast radius, especially for mission-critical infrastructure, safety-sensitive systems, and codebases carrying decades of institutional wisdom.</p>
 <p>I strongly agree with the caution, but I would like to add a complementary perspective.</p>
 <p>I don’t think the answer is to exclude AI from these high-blast-radius domains. I think the answer is to change the control system around AI-written code.</p>
 <p>AI should absolutely support coding in distributed systems, databases, and security frameworks, provided that we embed stronger safeguards by design:</p>
 <ul>
-<li>AI-assisted observability and monitoring as a first-class concern</li>
-<li>Early anomaly detection to surface bugs, backdoors, and unintended behaviours</li>
-<li>Security testing integrated directly into CI/CD pipelines</li>
-<li>Continuous validation at runtime, not just at build time</li>
-<li>Sandbox and progressive (A/B) deployments, where AI-generated code is first exposed to limited user segments, then gradually expanded as confidence grows</li>
+  <li>AI-assisted observability and monitoring as a first-class concern</li>
+  <li>Early anomaly detection to surface bugs, backdoors, and unintended behaviours</li>
+  <li>Security testing integrated directly into CI/CD pipelines</li>
+  <li>Continuous validation at runtime, not just at build time</li>
+  <li>Sandbox and progressive (A/B) deployments, where AI-generated code is first exposed to limited user segments, then gradually expanded as confidence grows</li>
 </ul>
 <p>In other words: the risk isn’t AI generating code, the risk is AI generating code without fast, intelligent feedback loops.</p>
-<h3>Open source</h3>
+<h2>Open source</h2>
 <p>On open source, I largely share Philippe’s optimism. OSS is not threatened by AI. It is, in many ways, its nourishment. Open source projects provide the patterns, debates, edge cases, and operational lessons that AI systems learn from. And AI, in turn, should and will generate new open source that benefits the entire ecosystem.</p>
-<h3>Where wisdom lives</h3>
+<h2>Where wisdom lives</h2>
 <p>Where I think the next shift happens is how wisdom is preserved.</p>
 <p>Yes, mature codebases encode years of production experience, but that wisdom shouldn’t live only as legacy code.</p>
 <p>It needs to be progressively captured as intent, constraints, architectural decisions, and behavioural expectations, so it can guide AI-assisted development without dragging along unnecessary technical debt.</p>
 <p>If we succeed at that, we don’t lose institutional memory. We make it executable, observable, and evolvable.</p>
 <p>AI isn’t replacing open source or engineering judgment. It’s reshaping where wisdom lives, how risk is controlled, and how quickly issues can be detected, and it’s also pushing us to evolve our operating models. Capabilities like observability, monitoring, and security, which traditionally grew alongside systems over time, increasingly need to be present from the start to safely support AI-assisted development.</p>
 <p>That’s not a threat. It’s an architectural challenge worth embracing.</p>
-<p class="note">Also published on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7417683282173042688/">LinkedIn</a>, where the discussion is.</p></article>
-<a class="more" href="/writing/">More writing</a></div></section>
-<footer class="dark"><div class="wrap"><div class="contact"><div><p class="eyebrow">Contact</p><h2>Let's talk.</h2>
-<p class="mute">For speaking invitations, please include the event, the date and the topic. LinkedIn is the fastest way to reach me.</p></div>
-<div class="links"><a href="https://www.linkedin.com/in/mohamed-talaye" rel="me">LinkedIn</a><a href="https://github.com/Mohamed-Talaye" rel="me">GitHub</a><a href="/bio.html">Media kit</a></div></div>
-<p class="fine">&copy; 2026 Mohamed Talaye. Views here are my own and not those of any employer.</p></div></footer>
-</body></html>
+      <p class="note">Also published on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7417683282173042688/">LinkedIn</a>, where the discussion is.</p>
+    </article>
+    <div class="author">
+      <img src="/assets/mohamed-talaye.jpg" alt="Mohamed Talaye" width="72" height="72" loading="lazy">
+      <p><strong>Mohamed Talaye</strong>Mohamed Talaye is a technology executive who builds technology organisations and the platforms they run on. Today, he is shaping the technology foundation for Aker BP&#x27;s AI-native ambition. <a href="/">More about me</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap">
+    <p class="eyebrow">Keep reading</p>
+    <div class="cards">
+      <a class="card" href="/writing/invisible-oss.html">
+        <span class="tag">Article</span>
+        <h3>Invisible OSS: From Operational Support to AI-Native Network Intelligence</h3>
+        <p>Invisible OSS does not mean OSS disappears. It means the complexity of operations disappears from the customer experience, because intelligence, automation and control move inside the network.</p>
+        <span class="foot"><time datetime="2026-05-21">21 May 2026</time> · 6 min read</span>
+      </a>
+      <a class="card" href="/writing/cto-to-chief-visionary-officer.html">
+        <span class="tag">Article</span>
+        <h3>From CTO to Chief Visionary Officer: How AI May Redefine Technology Leadership</h3>
+        <p>As AI agents take on more of architecture, development and execution, technology leadership may shift from supervising delivery to shaping vision, structured intent and trust. A personal reflection on the AIshore era.</p>
+        <span class="foot"><time datetime="2026-05-03">3 May 2026</time> · 5 min read</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="dark">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk.</h2>
+        <p class="mute">For speaking invitations, please include the event, the date and the topic. LinkedIn is the fastest way to reach me.</p>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/mohamed-talaye" rel="me">LinkedIn</a>
+        <a href="https://github.com/Mohamed-Talaye" rel="me">GitHub</a>
+        <a href="/bio.html">Media kit</a>
+        <a href="/feed.xml">RSS</a>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 Mohamed Talaye. Views here are my own and not those of any employer.</p>
+  </div>
+</footer>
+
+</body>
+</html>

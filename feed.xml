@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing by Mohamed Talaye</title>
+    <link>https://mohamed-talaye.github.io/writing/</link>
+    <atom:link href="https://mohamed-talaye.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Articles by Mohamed Talaye on invisible OSS, AI-native operations, B2B connectivity and technology leadership.</description>
+    <language>en</language>
+    <item>
+      <title>Invisible OSS: From Operational Support to AI-Native Network Intelligence</title>
+      <link>https://mohamed-talaye.github.io/writing/invisible-oss.html</link>
+      <guid>https://mohamed-talaye.github.io/writing/invisible-oss.html</guid>
+      <pubDate>Thu, 21 May 2026 08:00:00 +0000</pubDate>
+      <description>Invisible OSS does not mean OSS disappears. It means the complexity of operations disappears from the customer experience, because intelligence, automation and control move inside the network.</description>
+    </item>
+    <item>
+      <title>From CTO to Chief Visionary Officer: How AI May Redefine Technology Leadership</title>
+      <link>https://mohamed-talaye.github.io/writing/cto-to-chief-visionary-officer.html</link>
+      <guid>https://mohamed-talaye.github.io/writing/cto-to-chief-visionary-officer.html</guid>
+      <pubDate>Sun, 03 May 2026 08:00:00 +0000</pubDate>
+      <description>As AI agents take on more of architecture, development and execution, technology leadership may shift from supervising delivery to shaping vision, structured intent and trust. A personal reflection on the AIshore era.</description>
+    </item>
+    <item>
+      <title>B2B Connectivity in the AI Era: The Future Is Not Just More Bandwidth</title>
+      <link>https://mohamed-talaye.github.io/writing/b2b-connectivity-ai-era.html</link>
+      <guid>https://mohamed-talaye.github.io/writing/b2b-connectivity-ai-era.html</guid>
+      <pubDate>Fri, 24 Apr 2026 08:00:00 +0000</pubDate>
+      <description>AI changes the nature of enterprise traffic, not only its volume. The future of B2B connectivity is connectivity plus intelligence, plus control, plus trust, delivered as a platform.</description>
+    </item>
+    <item>
+      <title>AI and blast radius: change the control system, not the scope</title>
+      <link>https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html</link>
+      <guid>https://mohamed-talaye.github.io/writing/ai-and-blast-radius.html</guid>
+      <pubDate>Thu, 15 Jan 2026 08:00:00 +0000</pubDate>
+      <description>A response to Philippe Ensarguet on AI-written code in mission-critical systems. The risk is not AI generating code. The risk is AI generating code without fast, intelligent feedback loops.</description>
+    </item>
+  </channel>
+</rss>
